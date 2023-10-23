@@ -1,0 +1,133 @@
+All Languages
+	Afrikaans: index:0,  value:af
+	Albanian: index:1,  value:sq
+	Amharic: index:2,  value:am
+	Arabic: index:3,  value:ar
+	Armenian: index:4,  value:hy
+	Assamese: index:5,  value:as
+	Azerbaijani: index:6,  value:az
+	Bangla: index:7,  value:bn
+	Bashkir: index:8,  value:ba
+	Basque: index:9,  value:eu
+	Bhojpuri: index:10,  value:bho
+	Bodo: index:11,  value:brx
+	Bosnian: index:12,  value:bs
+	Bulgarian: index:13,  value:bg
+	Cantonese (Traditional): index:14,  value:yue
+	Catalan: index:15,  value:ca
+	Chinese (Literary): index:16,  value:lzh
+	Chinese Simplified: index:17,  value:zh-Hans
+	Chinese Traditional: index:18,  value:zh-Hant
+	Croatian: index:19,  value:hr
+	Czech: index:20,  value:cs
+	Danish: index:21,  value:da
+	Dari: index:22,  value:prs
+	Divehi: index:23,  value:dv
+	Dogri: index:24,  value:doi
+	Dutch: index:25,  value:nl
+	English: index:26,  value:en
+	Estonian: index:27,  value:et
+	Faroese: index:28,  value:fo
+	Fijian: index:29,  value:fj
+	Filipino: index:30,  value:fil
+	Finnish: index:31,  value:fi
+	French: index:32,  value:fr
+	French (Canada): index:33,  value:fr-CA
+	Galician: index:34,  value:gl
+	Ganda: index:35,  value:lug
+	Georgian: index:36,  value:ka
+	German: index:37,  value:de
+	Greek: index:38,  value:el
+	Gujarati: index:39,  value:gu
+	Haitian Creole: index:40,  value:ht
+	Hausa: index:41,  value:ha
+	Hebrew: index:42,  value:he
+	Hindi: index:43,  value:hi
+	Hmong Daw: index:44,  value:mww
+	Hungarian: index:45,  value:hu
+	Icelandic: index:46,  value:is
+	Igbo: index:47,  value:ig
+	Indonesian: index:48,  value:id
+	Inuinnaqtun: index:49,  value:ikt
+	Inuktitut: index:50,  value:iu
+	Inuktitut (Latin): index:51,  value:iu-Latn
+	Irish: index:52,  value:ga
+	Italian: index:53,  value:it
+	Japanese: index:54,  value:ja
+	Kannada: index:55,  value:kn
+	Kashmiri: index:56,  value:ks
+	Kazakh: index:57,  value:kk
+	Khmer: index:58,  value:km
+	Kinyarwanda: index:59,  value:rw
+	Klingon (Latin): index:60,  value:tlh-Latn
+	Konkani: index:61,  value:gom
+	Korean: index:62,  value:ko
+	Kurdish (Central): index:63,  value:ku
+	Kurdish (Northern): index:64,  value:kmr
+	Kyrgyz: index:65,  value:ky
+	Lao: index:66,  value:lo
+	Latvian: index:67,  value:lv
+	Lingala: index:68,  value:ln
+	Lithuanian: index:69,  value:lt
+	Lower Sorbian: index:70,  value:dsb
+	Macedonian: index:71,  value:mk
+	Maithili: index:72,  value:mai
+	Malagasy: index:73,  value:mg
+	Malay: index:74,  value:ms
+	Malayalam: index:75,  value:ml
+	Maltese: index:76,  value:mt
+	Marathi: index:77,  value:mr
+	Mongolian (Cyrillic): index:78,  value:mn-Cyrl
+	Mongolian (Traditional): index:79,  value:mn-Mong
+	Myanmar (Burmese): index:80,  value:my
+	Māori: index:81,  value:mi
+	Nepali: index:82,  value:ne
+	Norwegian: index:83,  value:nb
+	Nyanja: index:84,  value:nya
+	Odia: index:85,  value:or
+	Pashto: index:86,  value:ps
+	Persian: index:87,  value:fa
+	Polish: index:88,  value:pl
+	Portuguese (Brazil): index:89,  value:pt
+	Portuguese (Portugal): index:90,  value:pt-PT
+	Punjabi: index:91,  value:pa
+	Querétaro Otomi: index:92,  value:otq
+	Romanian: index:93,  value:ro
+	Rundi: index:94,  value:run
+	Russian: index:95,  value:ru
+	Samoan: index:96,  value:sm
+	Serbian (Cyrillic): index:97,  value:sr-Cyrl
+	Serbian (Latin): index:98,  value:sr-Latn
+	Sesotho: index:99,  value:st
+	Sesotho sa Leboa: index:100,  value:nso
+	Setswana: index:101,  value:tn
+	Shona: index:102,  value:sn
+	Sindhi: index:103,  value:sd
+	Sinhala: index:104,  value:si
+	Slovak: index:105,  value:sk
+	Slovenian: index:106,  value:sl
+	Somali: index:107,  value:so
+	Spanish: index:108,  value:es
+	Swahili: index:109,  value:sw
+	Swedish: index:110,  value:sv
+	Tahitian: index:111,  value:ty
+	Tamil: index:112,  value:ta
+	Tatar: index:113,  value:tt
+	Telugu: index:114,  value:te
+	Thai: index:115,  value:th
+	Tibetan: index:116,  value:bo
+	Tigrinya: index:117,  value:ti
+	Tongan: index:118,  value:to
+	Turkish: index:119,  value:tr
+	Turkmen: index:120,  value:tk
+	Ukrainian: index:121,  value:uk
+	Upper Sorbian: index:122,  value:hsb
+	Urdu: index:123,  value:ur
+	Uyghur: index:124,  value:ug
+	Uzbek (Latin): index:125,  value:uz
+	Vietnamese: index:126,  value:vi
+	Welsh: index:127,  value:cy
+	Xhosa: index:128,  value:xh
+	Yoruba: index:129,  value:yo
+	Yucatec Maya: index:130,  value:yua
+	Zulu: index:131,  value:zu
