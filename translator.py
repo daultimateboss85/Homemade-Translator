@@ -9,13 +9,11 @@ import pyautogui as pag
 from gtts import gTTS
 from playsound import playsound
 import os
+from inputimeout import inputimeout, TimeoutOccurred
 
 options = EdgeOptions()
 options.add_experimental_option("excludeSwitches", ["enable-logging"])
-
-
 languages = shelve.open("langs_data")["langs"]
-
 
 def speakText(text):
     # Initialize the engine
@@ -24,11 +22,11 @@ def speakText(text):
     engine.runAndWait()
 
 
-def main():
+def sub_main():
     # open browser
     browser = webdriver.Edge(options=options)
     window = pag.getWindowsWithTitle("data:, - Profile 1 - Microsoft\u200b Edge")[0]
-    # window.topleft = (-2000,-2000)
+    window.topleft = (-2000,-2000)
 
     browser.get(
         "https://www.bing.com/Translator?toWww=1&redig=215FFC5EB6154E628E9150DFE1C8EBCE"
@@ -43,13 +41,25 @@ def main():
     # accept cookies :{
     cookies = browser.find_element("class name", "fc-button-label")
     cookies.click()
+
+    # finding elements on cantonese speech page
+    browser.execute_script("document.querySelector('#voice').selectedIndex = 1")
+
+    speak_button = browser.find_element("id", "buttonSPR")
+    cant_text = browser.find_element("id", "text")
+
+    # slow down
+    speed = browser.find_element("id", "speedDelta")
+    speed.clear()
+    speed.send_keys(-5)
+
     # switch back to translator
     browser.switch_to.window(browser.window_handles[0])
 
+    # getting elements i need once for efficiency sake
     click_button = browser.find_element("id", "tta_copyIcon")
     in_text = browser.find_element("id", "tta_input_ta")
     reverse_button = browser.find_element("id", "tta_revIcon")
-
     time.sleep(2)
 
     # selecting languages to use in convo
@@ -94,20 +104,31 @@ def main():
         if out_language == "Cantonese (Traditional)":
             # swap to second tab
             browser.switch_to.window(browser.window_handles[1])
-            text = browser.find_element("id", "text")
-            text.clear()
-            text.send_keys(translated_text)
+
+            if count in [2, 3]:
+                browser.refresh()
+                # finding elements on cantonese speech page
+                browser.execute_script(
+                    "document.querySelector('#voice').selectedIndex = 1"
+                )
+
+                speak_button = browser.find_element("id", "buttonSPR")
+                cant_text = browser.find_element("id", "text")
+
+                # slow down
+                speed = browser.find_element("id", "speedDelta")
+                speed.clear()
+                speed.send_keys(-5)
+
+            cant_text.clear()
+            cant_text.send_keys(translated_text)
             time.sleep(1)
-
-            browser.execute_script("document.querySelector('#voice').selectedIndex = 1")
-
-            speak_button = browser.find_element("id", "buttonSPR")
 
             try:
                 speak_button.click()
                 time.sleep(2)
             except:
-                time.sleep(20)
+                print("Error occured")
 
             browser.switch_to.window(browser.window_handles[0])
 
@@ -117,7 +138,6 @@ def main():
             time.sleep(1)
             playsound("output.mp3")
             os.unlink("output.mp3")
-            
             # speakText(translated_text)
 
         # swap languages around so other user can speak
@@ -130,5 +150,12 @@ def main():
         # once gotten translated text clear input
         in_text.clear()
 
+def main():
+    while True:
+        returned = sub_main()
+        if returned == "Swap":
+            continue
+        else:
+            break
 
 main()

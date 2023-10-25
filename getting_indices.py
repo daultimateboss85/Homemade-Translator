@@ -10,12 +10,6 @@ selector = soup.select("#tta_tgtsl option")
 
 langs = {}
 
-"""
-index 
-language code
-
-"""
-
 index_file = open("langs_data.txt","w", encoding="utf-8")
 index_file.write("All Languages\n")
 
